@@ -12,9 +12,8 @@
 
   <body>
     <%= render "layouts/navbar"%>
-    <% "#{notice} #{alert}"%>
-    <%= render "layouts/flash", msgs: notice || alert %>
     <div class="container">
+      <%= render "layouts/flash" %>
       <%= yield %>
     </div>
   </body>
