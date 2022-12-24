@@ -1,0 +1,12 @@
+li.plan-feature-filler{
+    list-style-type: none;
+}
+
+.card_pricing{
+    height: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
