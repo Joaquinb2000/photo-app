@@ -86,3 +86,5 @@ gem "ruby-lsp", "~> 0.3.7", :group => :development
 gem "cssbundling-rails", "~> 1.1"
 
 gem "jsbundling-rails", "~> 1.1"
+
+gem "stripe", "~> 8.0"
