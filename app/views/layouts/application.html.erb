@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= favicon_link_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "custom", "data-turbo-track": "reload" %>
@@ -14,9 +15,10 @@
 
   <body>
     <%= render "layouts/navbar"%>
-    <div class="container">
+    <div class="container main mb-5">
       <%= render "layouts/flash" %>
       <%= yield %>
     </div>
+      <%= render "layouts/footer"%>
   </body>
 </html>

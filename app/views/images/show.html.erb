@@ -8,15 +8,15 @@
     <dt><%= model_class.human_attribute_name(:name) %>:</dt>
     <dd><strong><%= @image.name %></strong></dd>
     <dt></dt>
-    <dd><%= image_tag(@image.picture.url, class: "img-fluid") if @image.picture? %></dd>
+    <dd class="d-flex justify-content-center"><%= image_tag(@image.picture.url, class: "img-fluid") if @image.picture? %></dd>
     <dt>Uploaded by  <%= model_class.human_attribute_name(:user_id) %>:</dt>
     <dd><strong><%= User.find(@image.user_id).email %></strong></dd>
   </dl>
 
   <%= link_to t('.back', :default => t("helpers.links.back")),
-                images_path, :class => 'btn btn-default'  %>
+                images_path, :class => 'btn btn-secondary'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                edit_image_path(@image), :class => 'btn btn-default' %>
+                edit_image_path(@image), :class => 'btn btn-secondary' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                 image_path(@image),
                 :method => 'delete',
