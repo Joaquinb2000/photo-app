@@ -35,6 +35,12 @@ gem "devise-bootstrap5"
 
 gem "twitter-bootstrap-rails"
 
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog-aws'
+
 
 
 # Use Redis adapter to run Action Cable in production

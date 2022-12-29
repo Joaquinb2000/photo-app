@@ -7,7 +7,7 @@ processes = []
 
 [build]
   [build.args]
-    BUILD_COMMAND = "bin/rails fly:build"
+    BUILD_COMMAND = "bundle exec rails assets:precompile ASSET_COMPILE=1"
     SERVER_COMMAND = "bin/rails fly:server"
 
 [deploy]
