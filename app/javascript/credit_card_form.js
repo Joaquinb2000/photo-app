@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+$(document).on("turbo:load" ,()=>{
     let show_error, stripeResponseHandler, submitHandler;
 
     submitHandler = (event) =>{
@@ -20,6 +20,7 @@ $(document).ready(()=>{
     stripeResponseHandler = (status, response) => {
         let token, $form;
         $form = $('.cc_form');
+        console.log(status)
 
         if (response.error) {
             console.log(response.error.message);
