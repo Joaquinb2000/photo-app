@@ -94,3 +94,5 @@ gem "cssbundling-rails", "~> 1.1"
 gem "jsbundling-rails", "~> 1.1"
 
 gem "stripe", "~> 8.0"
+
+gem "dockerfile-rails", ">= 1.5", :group => :development

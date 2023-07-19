@@ -82,5 +82,6 @@ test:
 production:
   <<: *default
   database: photo_app_production
-  username: photo_app
-  password: <%= ENV["PHOTO_APP_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL']%>
