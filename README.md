@@ -1,3 +1,3 @@
 # Live on
 
-https://photo-app.fly.dev/
+https://photo-app-jb.fly.dev/
